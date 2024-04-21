@@ -10,5 +10,6 @@ namespace Algorithms_and_data_structures
     {
         public int Value {  get; set; }
         public LinkedListNode Next { get; set; }
+
     }
 }
