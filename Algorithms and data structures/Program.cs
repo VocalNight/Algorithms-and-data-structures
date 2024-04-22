@@ -51,3 +51,22 @@ string check2( string[] a)
 
     return "No duplicates";
 }
+
+string stackCheck(string a)
+{
+    Stack stack = new Stack();
+    string inverted = null;
+
+    foreach (char c in a)
+    {
+        stack.Push(c);
+    }
+
+    foreach (char c in stack)
+    {
+        inverted.Append(c);
+
+    }
+
+    return inverted;
+}
