@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Algorithms_and_data_structures;
+using System.Collections;
 
 List<int> check( List<int> a, List<int> b )
 {
@@ -70,3 +71,5 @@ string stackCheck(string a)
 
     return inverted;
 }
+
+Console.WriteLine(Recursion.NumberOfLetters(new List<string>() { "a", "ncskd", "4854", "saldjklasd"}));
