@@ -18,5 +18,24 @@ namespace Algorithms_and_data_structures
 
             return NumberOfLetters(words, index + 1, count + words[index].Length);
         }
+
+        public static int TriangleSequence( int num, int sum = 0, int count = 1)
+        {
+            if (count == num + 1)
+            {
+                return sum;
+            }
+
+            return TriangleSequence(num, sum + count, count + 1);
+        }
+
+        public static int ReturnX(string word, int index = 0)
+        {
+            if (word[index] == 'x')
+            {
+                return index;
+            }
+            return ReturnX(word, index + 1);
+        }
     }
 }
