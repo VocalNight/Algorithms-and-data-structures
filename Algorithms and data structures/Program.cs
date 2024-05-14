@@ -72,4 +72,10 @@ string stackCheck(string a)
     return inverted;
 }
 
-Console.WriteLine(Recursion.ReturnX("abcdefghijklmnopqrstuvwxyz"));
+var a = Partitioning.PartitionArray(new List<int> { 0, 5, 2, 1, 6, 3 });
+
+foreach (int b in a)
+{
+    Console.WriteLine(b);
+}
+
