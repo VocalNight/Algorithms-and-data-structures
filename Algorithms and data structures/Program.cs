@@ -72,10 +72,23 @@ string stackCheck(string a)
     return inverted;
 }
 
-var a = Partitioning.PartitionArray(new List<int> { 0, 5, 2, 1, 6, 3 });
 
-foreach (int b in a)
+
+List<int> list = new List<int> { 1, 2, 4, 7, 9, 3, 6, 5 };
+list = Sorting.SortList(list);
+
+for (int i = 0;  i < list.Count; i++)
 {
-    Console.WriteLine(b);
+    if (list[i + 1] == list[i] + 1)
+    {
+        continue;
+    } else
+    {
+        Console.WriteLine(list[i] + 1);
+        break;
+    }
+         
 }
+
+
 
