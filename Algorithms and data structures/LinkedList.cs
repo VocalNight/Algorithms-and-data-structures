@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Algorithms_and_data_structures
 {
-    public class LinkedListNode
+    public class LinkedList
     {
-        public int Value {  get; set; }
-        public LinkedListNode Next { get; set; }
-
+        public LinkedListNode FirstNode { get; set; }
     }
 }
